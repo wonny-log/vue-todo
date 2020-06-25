@@ -4,10 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vue Todo with CDN</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <div id="app">
-      {{ message }}
+      <div class="container">
+        <header>
+          <h1>Vue Todo with CDN</h1>
+        </header>
+        <section class="filter">
+          <div class="filter-item active">All</div>
+          <div class="filter-item">To Do</div>
+          <div class="filter-item">Complated</div>
+        </section>
+        <section class="todo-list">
+          <div class="todo-item">
+            <input id="checkbox" type="checkbox" />
+            <label for="checkbox"></label>
+            Item
+            <button class="delete-button"></button>
+          </div>
+          <div class="todo-item">
+            <input id="checkbox" type="checkbox" />
+            <label for="checkbox"></label>
+            Item
+            <button class="delete-button"></button>
+          </div>
+        </section>
+        <section class="input-container">
+          <form>
+            <input type="text" />
+            <button type="submit">Add</button>
+          </form>
+          <div class="panel">
+            <span>23 Todos</span>
+            <button>Clear All</button>
+          </div>
+        </section>
+
+        <footer>
+          Created by Wonny
+        </footer>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

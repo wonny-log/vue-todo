@@ -1,0 +1,130 @@
+body {
+  background-color: #ededed;
+  color: #4d4d4d;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: white;
+  box-sizing: border-box;
+  width: 400px;
+  margin: 30px auto 0 auto;
+  border-radius: 3px;
+  text-align: center;
+}
+
+header {
+  color: #3f87f6;
+  padding-top: 32px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.todo-list {
+  margin-top: 24px;
+  text-align: left;
+}
+
+.todo-item {
+  padding: 16px;
+}
+
+.filter {
+  display: flex;
+  margin-top: 8px;
+  justify-content: center;
+}
+
+.filter-item {
+  color: #cccccc;
+  padding: 8px 20px;
+}
+
+.filter-item.active {
+  color: #4d4d4d;
+}
+
+.input-container {
+  padding: 16px;
+}
+
+.input-container form {
+  display: flex;
+}
+
+.input-container input {
+  flex-grow: 3;
+  margin-right: 8px;
+}
+
+.input-container button {
+  flex-grow: 1;
+}
+
+footer {
+  padding: 0 24px 24px 24px;
+  font-size: 12px;
+}
+
+.panel {
+  margin-top: 24px;
+  overflow: hidden;
+}
+
+.panel span {
+  float: left;
+}
+
+.panel button {
+  float: right;
+}
+
+input[id="checkbox"] + label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+input[id="checkbox"]:checked + label {
+  background-color: red;
+}
+
+input[id="checkbox"] {
+  display: none;
+}
+
+.todo-item {
+  position: relative;
+}
+
+.delete-button {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  font-size: 30px;
+  color: #cc9a9a;
+  margin-bottom: 11px;
+  transition: color 0.2s ease-out;
+}
+
+.delete-button:hover {
+  color: #af5b5e;
+}
+
+.delete-button:after {
+  content: "×";
+}
+
+.delete-button {
+  display: block;
+}
